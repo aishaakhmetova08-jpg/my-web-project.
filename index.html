@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Портал — Веб-разработка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">DevOps & Web</span>
+            <h1>Автоматизация в веб-разработке</h1>
+            <p class="subtitle">Учебный проект по настройке непрерывной интеграции и доставки (CI/CD) через GitHub Actions</p>
+        </header>
+
+        <main class="cards">
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h2>CI (Integration)</h2>
+                <p>Автоматическая проверка кода, поиск синтаксических ошибок и запуск тестов после каждого коммита.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h2>CD (Deployment)</h2>
+                <p>Сборка готового проекта и мгновенная публикация обновлений на сервер без ручной рутины[cite: 1].</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛡️</div>
+                <h2>Контроль качества</h2>
+                <p>Гарантия того, что в основную ветку <code>main</code> попадает только рабочий и проверенный код[cite: 1].</p>
+            </div>
+        </main>
+
+        <section class="interactive-panel">
+            <h3>Симулятор запуска Pipeline</h3>
+            <p id="status-text">Система готова к проверке файлов проекта...</p>
+            <button id="deploy-btn">Запустить проверку сборки</button>
+            <div class="counter">Успешных запусков: <span id="run-count">0</span></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
